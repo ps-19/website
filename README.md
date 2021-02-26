@@ -15,11 +15,11 @@ This is the main repository of the official website of the Bash Woman Community.
         *  domain --linked with **domain** section
         *  team --linked with **about team** section
         *  connect --<u>need to link with a Google Form</u>
-    * **about** section (first section of the page). It has a button named *Need Help?* for that <u> we have to create a Google Form which will also work for the connect part of navbar</u>
-    * **domains event** section for displaying top events of the community, each events are linked with a hashnode blogpost. <u> Code-A-Byte is not linked as the blog has not been written yet </u> 
-    * **domains** section for displaying our services, currently there are 9 services. <u> Each can be linked with the specific discord channels of the official server</u>. However, the text inside each card element is currently lorem ipsum. So <u>that needs to be changed according to specific domains.</u>
-    * **about team** section for displaying info's about our team members (organizer and mentors). It has a button named *Team Members* which will be linked with a new file **team.html**. So <u> we have to create that file as well </u>
-    * **sponsor/supporter** section. It has not created yet as we don't have any. But as soon as we have our first supporter, <u>we need to create this section</u> 
+    * **about** section (first section of the page). It has a button named *Need Help?* for that `we have to create a Google Form which will also work for the connect part of navbar`
+    * **domains event** section for displaying top events of the community, each events are linked with a hashnode blogpost. `Code-A-Byte is not linked as the blog has not been written yet.`
+    * **domains** section for displaying our services, currently there are 9 services. `Each can be linked with the specific discord channels of the official server`. However, the text inside each card element is currently lorem ipsum. So `that needs to be changed according to specific domains.`
+    * **about team** section for displaying info's about our team members (organizer and mentors). It has a button named *Team Members* which will be linked with a new file **team.html**. So `we have to create that file as well`
+    * **sponsor/supporter** section. It has not created yet as we don't have any. But as soon as we have our first supporter, `we need to create this section`
     * **footer** part of the website. Contains three segments (ABOUT, USEFUL LINKS, SOCIAL HANDLES). Don't need to change anything until further instruction. 
 
 
@@ -46,7 +46,7 @@ You may know the 3 easy steps of contribution to a open-source repo like this -
 * Code
 * Pull Request
   
-And after going through the code description you may have already understood how can you make contribution or which parts demands your effort. You have to work on the <u>underlined</u> parts mentions above.
+And after going through the code description you may have already understood how can you make contribution or which parts demands your effort. You have to work on the `highlighted` parts mentions above.
 
 Let me quickly recap the tasks for you:
 * Create Google Form for connect/Need-Help
