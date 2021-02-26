@@ -15,7 +15,7 @@ This is the main repository of the official website of the Bash Woman Community.
         *  domain --linked with **domain** section
         *  team --linked with **about team** section
         *  connect --<u>need to link with a Google Form</u>
-    * **about** section (first section of the page). It has a button named *Need Help?* for that <u> we have to create a Google Form which will also work for the connect part of navbar</u>
+    * **about** section (first section of the page). It has a button named *Need Help?* for that `we have to create a Google Form which will also work for the connect part of navbar`
     * **domains event** section for displaying top events of the community, each events are linked with a hashnode blogpost. <u> Code-A-Byte is not linked as the blog has not been written yet </u> 
     * **domains** section for displaying our services, currently there are 9 services. <u> Each can be linked with the specific discord channels of the official server</u>. However, the text inside each card element is currently lorem ipsum. So <u>that needs to be changed according to specific domains.</u>
     * **about team** section for displaying info's about our team members (organizer and mentors). It has a button named *Team Members* which will be linked with a new file **team.html**. So <u> we have to create that file as well </u>
