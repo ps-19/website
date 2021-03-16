@@ -24,6 +24,7 @@
 
 section {
     padding: 120px 0;
+    margin: 4vh;
 }
 
 section .title {
@@ -109,7 +110,7 @@ section .title::after {
 
 .about .about-content .left a:hover {
     color: black;
-    background-color: rgb(47, 241, 255);
+    background-color: #c7c7c715;
 }
 
 .team {
@@ -184,8 +185,11 @@ section .title::after {
 }
 
 .event .row .col a:hover .card {
-    transition: all 0.3s ease;
-    transform: scale(1.02);
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.01);
+    box-shadow: 15px 15px 66px -22px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 15px 15px 66px -22px rgba(0,0,0,0.5);
+    -moz-box-shadow: 15px 15px 66px -22px rgba(0,0,0,0.5);
 }
 
 .domains .serv-content .card {
@@ -207,7 +211,7 @@ section .title::after {
 }
 
 .domains .serv-content .card:hover .box {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .domains .serv-content .card .text {
