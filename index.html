@@ -1,265 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+		/>
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+		<link
+			rel="shortcut icon"
+			href="./img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="css/common_style.css" />
+		<link rel="stylesheet" href="css/index.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+		<title>Bash Woman Community</title>
+	</head>
 
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/common_style.css">
-    <link rel="stylesheet" href="css/index.css">
+	<body>
+		<nav
+			id="start"
+			class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
+		>
+			<h2 class="navbar-brand brand-name">
+				<a
+					class="navbar-brand logo"
+					href="index.html"
+					style="text-decoration: none"
+					>&#60;_<span style="color: rgb(47, 255, 47)">WOMAN</span></a
+				>
+			</h2>
 
-    <title>Bash Woman Community</title>
-</head>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarTogglerDemo03"
+				aria-controls="navbarTogglerDemo03"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#home"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#events">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#domains">Domains</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Team</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="https://bashwomancommunity.hashnode.dev/"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Blog</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://discord.gg/R3cnnK6fy9"
+							>Connect</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
+		<section class="about" id="home">
+			<div class="max-width">
+				<div class="about-content">
+					<div class="column left">
+						<div class="text">Bash Woman Community</div>
+						<p>
+							Bash Woman Community is an initiative to guide and
+							mentor students. Many students are not aware of the
+							tech and need some mentorship. We as a community do
+							our part by mentoring students in different domains.
+							The aim of our community is to help 10k people in
+							2021. It has already helped many people by
+							organizing events, meetups, contests, and also
+							through direct communication.
+						</p>
+						<a href="#" target="_blank">Need Help?</a>
+					</div>
+					<div class="column right first" style="padding-left: 50px">
+						<img src="./img/home-img.png" alt="Home Image" />
+					</div>
+				</div>
+			</div>
+		</section>
 
-<body>
-    <nav id="start" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <h2 class="navbar-brand brand-name">
-            <a class="navbar-brand logo" href="index.html" style="text-decoration: none;">&#60;_<span
-                    style="color: rgb(47, 255, 47);">WOMAN</span></a>
-        </h2>
+		<section class="domains event" id="events">
+			<div class="max-width">
+				<h2 class="title">Events</h2>
+				<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="col">
+						<a
+							href="https://bashwomancommunity.hashnode.dev/code-a-byte"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<div class="card">
+								<img
+									src="img/codeabyte.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Code A Byte</h5>
+									<p class="card-text">
+										Code-A-Byte is the first competitive
+										coding event that will be organized by
+										Bash Woman Community. It will be hosted
+										on Code Forces. Taking part in this
+										contest will teach you how to be more
+										focused on the task and not only
+										complete it quickly, but accurately.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a
+							href="https://bashwomancommunity.hashnode.dev/be-a-blogging-ninja-with-bashwomancommunity"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<div class="card">
+								<img
+									src="img/bninja.png"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Blogging Ninja</h5>
+									<p class="card-text">
+										Blogging Ninja is the next level
+										technical blog writing challenge
+										organized by Bash Woman Community.
+										Technical blogs are the way to diversify
+										our knowledge base and help the
+										community. With the upcoming new
+										technologies the older proposed solution
+										needs to be reiterated, thus technical
+										blogs come in aid.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+		<section class="domains" id="domains">
+			<div class="max-width">
+				<h2 class="title">Our Domains</h2>
+				<div class="serv-content">
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text">Coding Newbie</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text" style="font-size: 20px">
+								Full-Stack Web Development
+							</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text">Data Science & AI</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text">DevOps</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text" style="font-size: 20px">
+								Android App Development
+							</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text">Open Source</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text">Blogging</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text" style="font-size: 20px">
+								Portfolio & Resume Review
+							</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="./img/temp.png" />
+							<div class="text">Soft Skills</div>
+							<p class="desc">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. At ipsam dignissimos illum
+								reprehenderit voluptate, aliquam corporis aut
+								sapiente mollitia. Eligendi officiis
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#domains">Domains</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://bashwomancommunity.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://discord.gg/R3cnnK6fy9">Connect</a></li>
-            </ul>
-        </div>
-    </nav>
+		<section class="about team" id="team">
+			<div class="max-width">
+				<div class="about-content">
+					<div class="column left">
+						<div class="text">Meet Our Team</div>
+						<p>
+							We have an amazing group of mentors and members who
+							are contributing to the community selflessly. They
+							are mentoring and helping people as much as they
+							can. Thanks to each and every individual who has
+							joined us for this mission to help 10k people. You
+							can join us too and help the community with your
+							skill-set.
+						</p>
+						<a
+							href="https://github.com/orgs/Bash-Woman-Community/people"
+							target="_blank"
+							>Team Members</a
+						>
+					</div>
+					<div class="column right">
+						<img src="./img/team.jpg" alt="Team" />
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-
-    <section class="about" id="home">
-        <div class="max-width">
-            <div class="about-content">
-                <div class="column left">
-                    <div class="text">Bash Woman Community</div>
-                    <p>Bash Woman Community is an initiative to guide and mentor students. Many students are not aware
-                        of the tech and need some mentorship. We as a community do our part by mentoring students in
-                        different domains. The aim of our community is to help 10k people in 2021. It has already helped
-                        many people by organizing events, meetups, contests, and also through direct communication.
-                    </p>
-                    <a href="#" target="_blank">Need Help?</a>
-                </div>
-                <div class="column right first" style="padding-left: 50px;">
-                    <img src="./img/home-img.png" alt="Home Image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="domains event" id="events">
-        <div class="max-width">
-            <h2 class="title">Events</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <a href="https://bashwomancommunity.hashnode.dev/code-a-byte" target="_blank" rel="noopener noreferrer">
-                        <div class="card">
-                            <img src="img/codeabyte.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Code A Byte</h5>
-                                <p class="card-text">Code-A-Byte is the first competitive coding event that will be organized by Bash Woman Community. It will be hosted on Code Forces. Taking part in this contest will teach you how to be more focused on the task and not only complete it quickly, but accurately. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="https://bashwomancommunity.hashnode.dev/be-a-blogging-ninja-with-bashwomancommunity" target="_blank" rel="noopener noreferrer">
-                        <div class="card">
-                            <img src="img/bninja.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Blogging Ninja</h5>
-                                <p class="card-text">Blogging Ninja is the next level technical blog writing challenge organized by Bash Woman Community. Technical blogs are the way to diversify our knowledge base and help the community. With the upcoming new technologies the older proposed solution needs to be reiterated, thus technical blogs come in aid.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="domains" id="domains">
-        <div class="max-width">
-            <h2 class="title">Our Domains</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text">Coding Newbie</div>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text" style="font-size: 20px;">Full-Stack Web Development</div>
-                        <p class="desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text">Data Science & AI</div>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text">DevOps</div>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text" style="font-size: 20px;">Android App Development</div>
-                        <p class="desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text">Open Source</div>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text">Blogging</div>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text" style="font-size: 20px;">Portfolio & Resume Review</div>
-                        <p class="desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./img/temp.png" />
-                        <div class="text">Soft Skills</div>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam dignissimos
-                            illum reprehenderit voluptate, aliquam corporis aut sapiente mollitia. Eligendi officiis</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about team" id="team">
-        <div class="max-width">
-            <div class="about-content">
-                <div class="column left">
-                    <div class="text">Meet Our Team</div>
-                    <p>We have an amazing group of mentors and members who are contributing to the community selflessly.
-                        They are mentoring and helping people as much as they can. Thanks to each and every individual
-                        who has joined us for this mission to help 10k people. You can join us too and help the
-                        community
-                        with your skill-set.
-                    </p>
-                    <a href="https://github.com/orgs/Bash-Woman-Community/people" target="_blank">Team Members</a>
-                </div>
-                <div class="column right">
-                    <img src="./img/team.jpg" alt="Team">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <footer>
-        <div class="footer-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-sm-80 col-xs-5 segment-one md-mb-30 sm-mb-30">
-                        <h3>About</h3>
-                        <p>This website is built with ❤ by the <u>Web Development Team</u> of the Bash Woman Community.
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
-                        <h2>Quick Links</h2>
-                        <ul>
-                            <li><a href="conduct.html">Code of Conduct</a></li>
-                            <li><a target="_blank" href="https://discord.gg/R3cnnK6fy9">Discord Server</a></li>
-                            <li><a target="_blank" href="https://bashwomancommunity.hashnode.dev/">Hashnode
-                                    Blogposts</a></li>
-                            <li><a target="_blank" href="https://www.youtube.com/BashWoman">Youtube Channel</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
-                        <h2>Follow us on</h2>
-                        <p>Please follow us on our social media handles in order to keep updated.</p>
-                        <a target="_blank" href="https://twitter.com/bashwomancomm"><i class="fa fa-twitter"></i></a>
-                        <a target="_blank" href="https://github.com/Bash-Woman-Community"><i
-                                class="fa fa-github"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/company/bash-woman-community/mycompany/"><i
-                                class="fa fa-linkedin"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/bashwomancommunity/"><i
-                                class="fa fa-instagram"></i></a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="footer-bottom-text">&copy Bash Woman Community 2021. All Rights' Reserved.</p>
-    </footer>
-
-</body>
-
+		<footer>
+			<div class="footer-top">
+				<div class="container-fluid">
+					<div class="row">
+						<div
+							class="col-md-4 col-sm-80 col-xs-5 segment-one md-mb-30 sm-mb-30"
+						>
+							<h3>About</h3>
+							<p>
+								This website is built with ❤ by the
+								<u>Web Development Team</u> of the Bash Woman
+								Community.
+							</p>
+						</div>
+						<div
+							class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30"
+						>
+							<h2>Quick Links</h2>
+							<ul>
+								<li>
+									<a href="conduct.html">Code of Conduct</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										href="https://discord.gg/R3cnnK6fy9"
+										>Discord Server</a
+									>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										href="https://bashwomancommunity.hashnode.dev/"
+										>Hashnode Blogposts</a
+									>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										href="https://www.youtube.com/BashWoman"
+										>Youtube Channel</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div
+							class="col-md-4 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30"
+						>
+							<h2>Follow us on</h2>
+							<p>
+								Please follow us on our social media handles in
+								order to keep updated.
+							</p>
+							<a
+								target="_blank"
+								href="https://twitter.com/bashwomancomm"
+								><i class="fa fa-twitter"></i
+							></a>
+							<a
+								target="_blank"
+								href="https://github.com/Bash-Woman-Community"
+								><i class="fa fa-github"></i
+							></a>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/company/bash-woman-community/mycompany/"
+								><i class="fa fa-linkedin"></i
+							></a>
+							<a
+								target="_blank"
+								href="https://www.instagram.com/bashwomancommunity/"
+								><i class="fa fa-instagram"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="footer-bottom-text">
+				&copy Bash Woman Community 2021. All Rights' Reserved.
+			</p>
+		</footer>
+	</body>
 </html>
