@@ -1,209 +1,197 @@
 /*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 /* FontAwesome for working BootSnippet :> */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /*Common Styling*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
-
-
-
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 6px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #797979;
+	background: #797979;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2b2b2b;
+	background: #2b2b2b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+	background: #555;
 }
-
-
-
 
 /* navbar styling */
 .navbar {
-    padding-left: 90px;
-    font-size: 20px;    
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.5s ease;
+	padding-left: 90px;
+	font-size: 20px;
+	font-family: "Ubuntu", sans-serif;
+	transition: all 0.5s ease;
+}
+
+.nav-item {
+	margin: 10px;
 }
 
 .navbar .navbar-brand {
-    font-size: 30px;
-}
-
-.navbar .navbar-nav li a:hover{
-    text-decoration: underline chartreuse;
+	font-size: 30px;
 }
 
 .navbar .navbar-nav {
-    padding-right: 90px;
+	padding-right: 90px;
 }
-
 
 /* Responsive Design */
-@media only screen and (max-width: 983px) and (min-width: 767px){
-    .navbar {
-        padding-left: 50px;
-    }
+@media only screen and (max-width: 983px) and (min-width: 767px) {
+	.navbar {
+		padding-left: 50px;
+	}
 }
 
-@media only screen and (max-width: 767px){
-    .navbar {
-        padding-left: 20px;
-    }
+@media only screen and (max-width: 767px) {
+	.navbar {
+		padding-left: 20px;
+	}
 }
-
-
-
-
-
 
 /* Footer Section */
-.footer-top{
-    clear: both;
-    background: #0FCA42;
-    padding: 50px 0;
+.footer-top {
+	clear: both;
+	background: #0fca42;
+	padding: 50px 0;
 }
 
-.segment-one{
-    padding-left: 60px;
+.segment-one {
+	padding-left: 60px;
 }
 
-.segment-one h3{
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
-    font-size: 22px;
-    letter-spacing: 3px;
-    margin: 10px 0;
-    text-transform: uppercase;
+.segment-one h3 {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 22px;
+	letter-spacing: 3px;
+	margin: 10px 0;
+	text-transform: uppercase;
 }
 
-.segment-two h2{
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
-    font-size: 22px;
-    text-transform: uppercase;
-    margin: 10px 0;
+.segment-two h2 {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 10px 0;
 }
 
-.segment-two ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.segment-two ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.segment-two ul li{
-    border-bottom: 1px solid rgba(255, 255,255, 0.3);
-    line-height: 40px;
+.segment-two ul li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	line-height: 40px;
 }
 
-.segment-two ul li a{
-    color: #111; 
-    text-decoration: none;
+.segment-two ul li a {
+	color: #111;
+	text-decoration: none;
+	transition: all 0.4s ease;
 }
 
-.segment-two ul li a:hover{
-    color:white;
+.segment-two ul li a:hover {
+	color: white;
 }
 
 .segment-three {
-    padding-right: 60px;
+	padding-right: 60px;
 }
 
-.segment-three h2{
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
-    font-size: 22px;
-    text-transform: uppercase;
-    margin: 10px 0;
+.segment-three h2 {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 10px 0;
 }
 
-.segment-three a{
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 50%;
+.segment-three a {
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 10px;
+	transition: all 0.4s ease;
 }
 
-.segment-three a i{
-    font-size: 26px;
-    color: #0FCA42;
-    padding: 7px 7px;
+.segment-three a:hover {
+	background: #dddddd;
 }
 
-
-.footer-bottom-text{
-    border-top: 2px solid rgba(255, 255,255, 0.3);
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    text-align: center;
-    background-color: #0FCA42;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: -10px;
+.segment-three a i {
+	font-size: 26px;
+	color: #0fca42;
+	padding: 7px 8px;
 }
 
-
-
+.footer-bottom-text {
+	border-top: 2px solid rgba(255, 255, 255, 0.3);
+	font-family: "Ubuntu", sans-serif;
+	color: white;
+	text-align: center;
+	background-color: #0fca42;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: -10px;
+}
 
 /* Responsive Design */
-@media only screen and (max-width: 983px) and (min-width: 767px){
-    .segment-one {
-        padding-left: 30px;
-    }
+@media only screen and (max-width: 983px) and (min-width: 767px) {
+	.segment-one {
+		padding-left: 30px;
+	}
 
-    .segment-three {
-        padding-right: 5px;
-    }
+	.segment-three {
+		padding-right: 5px;
+	}
 
-    .md-mb-30{
-        margin-bottom: 30px;
-    }
+	.md-mb-30 {
+		margin-bottom: 30px;
+	}
 }
 
-@media only screen and (max-width: 767px){
-    .segment-one {
-        padding-left: 20px;
-    }
+@media only screen and (max-width: 767px) {
+	.segment-one {
+		padding-left: 20px;
+	}
 
-    .segment-three {
-        padding-right: 20px;
-    }
+	.segment-three {
+		padding-right: 20px;
+	}
 
-   .sm-mb-30{
-	    margin-bottom:30px;
-    }
+	.sm-mb-30 {
+		margin-bottom: 30px;
+	}
 
-    .footer-top{
-        padding: 50px 0;
-    }
+	.footer-top {
+		padding: 50px 0;
+	}
 
-    .footer-bottom-text{
-        line-height: 18px;
-        padding: 10px;
-        font-size:15px;
-    }
+	.footer-bottom-text {
+		line-height: 18px;
+		padding: 10px;
+		font-size: 15px;
+	}
 }

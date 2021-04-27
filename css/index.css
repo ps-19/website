@@ -1,274 +1,269 @@
 /* all similar content styling codes */
 
 .max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
 }
 
-.about, .domains {
-    font-family: 'Poppins', sans-serif;
+.about,
+.domains {
+	font-family: "Poppins", sans-serif;
 }
 
-.about .about-content, .domains .serv-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.about .about-content,
+.domains .serv-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
-
-
-
 
 /* Section */
 
 section {
-    padding: 120px 0;
+	padding: 120px 0;
+	margin: 4vh;
 }
 
 section .title {
-    position: relative;
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+	position: relative;
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	font-family: "Ubuntu", sans-serif;
 }
 
 section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    transform: translateX(-50%);
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	transform: translateX(-50%);
 }
 
 section .title::after {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	font-size: 20px;
+	color: crimson;
+	padding: 0 5px;
+	background: #fff;
+	transform: translateX(-50%);
 }
-
-
-
-
 
 /* First Home Section + Meet Our Team */
 
 .about .about-content .left {
-    margin-right: -500px;
+	margin-right: -500px;
 }
 
 .about .about-content .right img {
-    max-height: 400px;
-    max-width: 380px;
-    border-radius: 6px;
-    margin-right: -20px;
+	max-height: 400px;
+	max-width: 380px;
+	border-radius: 6px;
+	margin-right: -20px;
 }
 
 .about .about-content .first img {
-    margin-top: -75px;
+	margin-top: -75px;
 }
 
 .about .about-content .left {
-    width: 55%;
+	width: 55%;
 }
 
 .about .about-content .left .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 .about .about-content .left .text {
-    color: black;
+	color: black;
 }
 
 .about .about-content .left p {
-    text-align: justify;
+	text-align: justify;
 }
 
 .about .about-content .left a {
-    display: inline-block;
-    background: rgb(5, 138, 247);
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 8px 20px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    text-decoration: none;
+	display: inline-block;
+	background: rgb(5, 138, 247);
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 8px 20px;
+	border-radius: 6px;
+	transition: all 0.3s ease;
+	text-decoration: none;
 }
 
 .about .about-content .left a:hover {
-    color: black;
-    background-color: rgb(47, 241, 255);
+	color: black;
+	background-color: #c7c7c715;
 }
 
 .team {
-    padding-top: 60px;
+	padding-top: 60px;
 }
 
 /* Responsive Design */
 
 @media only screen and (max-width: 983px) and (min-width: 767px) {
-    .about .about-content .left {
-        margin-left: -50px;
-        margin-top: -50px;
-    }
-    .about .about-content .right img {
-        max-height: 380px;
-        max-width: 320px;
-        margin-right: -50px;
-    }
+	.about .about-content .left {
+		margin-left: -50px;
+		margin-top: -50px;
+	}
+	.about .about-content .right img {
+		max-height: 380px;
+		max-width: 320px;
+		margin-right: -50px;
+	}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 625px) {
-    .about .about-content .left .text {
-        font-size: 22px;
-    }
-    .about .about-content .left {
-        margin-left: -50px;
-        margin-top: -50px;
-    }
-    .about .about-content .right img {
-        max-height: 380px;
-        max-width: 300px;
-        margin-right: -50px;
-    }
+	.about .about-content .left .text {
+		font-size: 22px;
+	}
+	.about .about-content .left {
+		margin-left: -50px;
+		margin-top: -50px;
+	}
+	.about .about-content .right img {
+		max-height: 380px;
+		max-width: 300px;
+		margin-right: -50px;
+	}
 }
 
 @media only screen and (max-width: 625px) {
-    .about .about-content .left .text {
-        font-size: 21px;
-    }
-    .about .about-content .left {
-        text-align: center;
-        margin-right: -50px;
-        margin-left: -50px;
-        width: 550px;
-        margin-top: -100px;
-    }
-    .about .about-content .right img {
-        max-height: 380px;
-        max-width: 140%;
-        margin-left: -40%;
-        margin-top: 20px;
-    }
-    .team .about-content .right img {
-        margin-left: -20%;
-    }
-    @media only screen and (min-width: 400px) {
-        .about .about-content .right img {
-            margin-left: -25%;
-        }
-    }
+	.about .about-content .left .text {
+		font-size: 21px;
+	}
+	.about .about-content .left {
+		text-align: center;
+		margin-right: -50px;
+		margin-left: -50px;
+		width: 550px;
+		margin-top: -100px;
+	}
+	.about .about-content .right img {
+		max-height: 380px;
+		max-width: 140%;
+		margin-left: -40%;
+		margin-top: 20px;
+	}
+	.team .about-content .right img {
+		margin-left: -20%;
+	}
+	@media only screen and (min-width: 400px) {
+		.about .about-content .right img {
+			margin-left: -25%;
+		}
+	}
 }
-
-
-
-
 
 /*Events + Our Domains*/
 
 .event .row .col a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .event .row .col a:hover .card {
-    transition: all 0.3s ease;
-    transform: scale(1.02);
+	transition: all 0.4s ease-in-out;
+	transform: scale(1.01);
+	box-shadow: 15px 15px 66px -22px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 15px 15px 66px -22px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 15px 15px 66px -22px rgba(0, 0, 0, 0.5);
 }
 
 .domains .serv-content .card {
-    width: calc(33% - 20px);
-    padding: 20px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
+	width: calc(33% - 20px);
+	padding: 20px 25px;
+	cursor: pointer;
+	margin-bottom: 20px;
 }
 
 .domains .serv-content .card img {
-    font-size: 50px;
-    height: 50px;
-    width: 50px;
-    color: crimson;
+	font-size: 50px;
+	height: 50px;
+	width: 50px;
+	color: crimson;
 }
 
 .domains .serv-content .card .box {
-    transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .domains .serv-content .card:hover .box {
-    transform: scale(1.05);
+	transform: scale(1.03);
 }
 
 .domains .serv-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
 }
 
 .domains .serv-content .card .desc {
-    font-size: 15px;
+	font-size: 15px;
 }
 
 /* Responsive Design */
 
 @media only screen and (max-width: 983px) and (min-width: 767px) {
-    .event .row {
-        margin-left: -65px;
-        margin-right: -65px;
-    }
-    .domains {
-        margin-top: -100px;
-    }
-    .domains .serv-content .card {
-        width: calc(56% - 10px);
-        margin-bottom: 20px;
-        margin-left: -50px;
-        margin-right: -60px;
-    }
-    .domains .title {
-        margin-left: -50px;
-    }
+	.event .row {
+		margin-left: -65px;
+		margin-right: -65px;
+	}
+	.domains {
+		margin-top: -100px;
+	}
+	.domains .serv-content .card {
+		width: calc(56% - 10px);
+		margin-bottom: 20px;
+		margin-left: -50px;
+		margin-right: -60px;
+	}
+	.domains .title {
+		margin-left: -50px;
+	}
 }
 
 @media only screen and (max-width: 767px) {
-    .event .row {
-        margin-left: -50px;
-        margin-right: -50px;
-    }
-    .domains {
-        margin-top: -150px;
-    }
-    .domains .title {
-        text-align: center;
-        font-size: 30px;
-    }
-    .event .card {
-        margin-bottom: 30px;
-    }
-    .domains .serv-content .card {
-        width: calc(120% - 10px);
-        margin-left: -30px;
-        margin-right: -50px;
-    }
-    @media only screen and (max-width: 500px) {
-        .domains .serv-content .card {
-            width: calc(135% - 10px);
-            margin-left: -30px;
-            margin-right: -50px;
-        }
-        .domains .serv-content .card .text{
-            font-size: 20px;
-        }
-    }
+	.event .row {
+		margin-left: -50px;
+		margin-right: -50px;
+	}
+	.domains {
+		margin-top: -150px;
+	}
+	.domains .title {
+		text-align: center;
+		font-size: 30px;
+	}
+	.event .card {
+		margin-bottom: 30px;
+	}
+	.domains .serv-content .card {
+		width: calc(120% - 10px);
+		margin-left: -30px;
+		margin-right: -50px;
+	}
+	@media only screen and (max-width: 500px) {
+		.domains .serv-content .card {
+			width: calc(135% - 10px);
+			margin-left: -30px;
+			margin-right: -50px;
+		}
+		.domains .serv-content .card .text {
+			font-size: 20px;
+		}
+	}
 }
