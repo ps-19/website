@@ -7,14 +7,14 @@ This is the main repository of the official website of the Bash Woman Community.
 # Code Description
 * ## Current files and folders
   * [index.html](index.html)<br>
-    it is the main html file. It cotains 
+    It is the main html file. It cotains: 
     * a sticky nav-bar
-        *  brand_logo --auto refreah the **index.html** page
-        *  home --linked with **about** section
-        *  event --linked with **domains event** section
-        *  domain --linked with **domain** section
-        *  team --linked with **about team** section
-        *  connect --<u>need to link with a Google Form</u>
+        *  brand_logo -- auto refreshes the **index.html** page
+        *  home -- linked with **about** section
+        *  event -- linked with **domains event** section
+        *  domain -- linked with **domain** section
+        *  team -- linked with **about team** section
+        *  connect -- <u>need to link with a Google Form</u>
     * **about** section (first section of the page). It has a button named *Need Help?* for that `we have to create a Google Form which will also work for the connect part of navbar`
     * **domains event** section for displaying top events of the community, each events are linked with a hashnode blogpost. `Code-A-Byte is not linked as the blog has not been written yet.`
     * **domains** section for displaying our services, currently there are 9 services. `Each can be linked with the specific discord channels of the official server`. However, the text inside each card element is currently lorem ipsum. So `that needs to be changed according to specific domains.`
@@ -39,17 +39,17 @@ This is the main repository of the official website of the Bash Woman Community.
 <br>
 
 # How to Contribute
-Firstly thank you if you want to contribute to this repository. [Note that](), please contact with us in our [Discord](https://discord.gg/R3cnnK6fy9) server or create and [issue](https://github.com/Bash-Woman-Community/website/issues/new) before contributing to the repository.
+Firstly thank you if you want to contribute to this repository. [Note that](), please contact with us in our [Discord](https://discord.gg/R3cnnK6fy9) server or create an [issue](https://github.com/Bash-Woman-Community/website/issues/new) before contributing to the repository.
 
 You may know the 3 easy steps of contribution to a open-source repo like this -
 * Fork
 * Code
 * Pull Request
   
-And after going through the code description you may have already understood how can you make contribution or which parts demands your effort. You have to work on the `highlighted` parts mentions above.
+And after going through the code description you may have already understood how can you make contribution or which part demands your effort. You have to work on the `highlighted` parts mentioned above.
 
 Let me quickly recap the tasks for you:
-* Create Google Form for connect/Need-Help
+* Create Google Form to connect/Need-Help
 * Write Description for each domains and link them with the discord channels
 * Create the **team.html** file
   * You can use the basic structure of **index.html** file
