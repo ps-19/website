@@ -7,7 +7,7 @@ This is the main repository of the official website of the Bash Woman Community.
 # Code Description
 * ## Current files and folders
   * [index.html](index.html)<br>
-    It is the main html file. It cotains: 
+    It is the main html file. It cotains
     * a sticky nav-bar
         *  brand_logo -- auto refreshes the **index.html** page
         *  home -- linked with **about** section
@@ -15,11 +15,11 @@ This is the main repository of the official website of the Bash Woman Community.
         *  domain -- linked with **domain** section
         *  team -- linked with **about team** section
         *  connect -- <u>need to link with a Google Form</u>
-    * **about** section (first section of the page). It has a button named *Need Help?* for that `we have to create a Google Form which will also work for the connect part of navbar`
+    * **about** section (first section of the page). It has a button named *Need Help?* for that `we have to create a Google Form which will also work for the connect part of navbar.`
     * **domains event** section for displaying top events of the community, each events are linked with a hashnode blogpost. `Code-A-Byte is not linked as the blog has not been written yet.`
     * **domains** section for displaying our services, currently there are 9 services. `Each can be linked with the specific discord channels of the official server`. However, the text inside each card element is currently lorem ipsum. So `that needs to be changed according to specific domains.`
-    * **about team** section for displaying info's about our team members (organizer and mentors). It has a button named *Team Members* which will be linked with a new file **team.html**. So `we have to create that file as well`
-    * **sponsor/supporter** section. It has not created yet as we don't have any. But as soon as we have our first supporter, `we need to create this section`
+    * **about team** section for displaying info's about our team members (organizer and mentors). It has a button named *Team Members* which will be linked with a new file **team.html**. So `we have to create that file as well.`
+    * **sponsor/supporter** section. It has not created yet as we don't have any. But as soon as we have our first supporter, `we need to create this section.`
     * **footer** part of the website. Contains three segments (ABOUT, USEFUL LINKS, SOCIAL HANDLES). Don't need to change anything until further instruction. 
 
 
@@ -34,7 +34,7 @@ This is the main repository of the official website of the Bash Woman Community.
         * first home section (**about**) & meet our team (**about team**) styling with responsive design.
         * Events (**domains event**) & Domains (**domains**) styling with responsive design.
   * [img](img) <br>
-    contains all the images and a [powerpoint file](img/generator.pptx) which is used to edit and design those images.
+    It contains all the images and a [powerpoint file](img/generator.pptx) which is used to edit and design those images.
 
 <br>
 
