@@ -65,7 +65,7 @@ Let me quickly recap the tasks for you:
 <br>
 
 # Special Thanks
-* [Web Development Team]() for providing necessary support and suggestions
+* [Web Development Team](https://discord.gg/R3cnnK6fy9) for providing necessary support and suggestions
 * [@seema1711](https://github.com/seema1711) for founding this amazing community and doing operational stuffs
 * [@plazzy99](https://github.com/plazzy99) for the website design
 * [@pandyaved98](https://github.com/pandyaved98) for creating the skeleton structure of the website
